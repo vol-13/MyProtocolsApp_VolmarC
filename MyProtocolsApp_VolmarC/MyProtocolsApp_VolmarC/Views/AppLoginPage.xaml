@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyProtocolsApp_VolmarC.Views.AppLoginPage"
+             Shell.NavBarIsVisible="False" 
+             NavigationPage.HasNavigationBar="False" 
+             BackgroundColor="Gainsboro"
+             BackgroundImageSource="AppLoginBG">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Padding="50, 25, 50,25" >
+
+            <Entry x:Name="TxtUserName" Placeholder="Email" FontSize="30" Keyboard="Email" TextColor="#0C0A0A"/>
+            
+            <Entry x:Name="TxtPassword" Placeholder="Password" FontSize="30" 
+                   Keyboard="Default" IsPassword="True" />
+
+            <Switch x:Name="SwShowPassword" IsToggled="False" Toggled="SwShowPassword_Toggled" />
+
+            <Button x:Name="BtnLogin" Text="LOGIN" BackgroundColor="DarkGreen" CornerRadius="15" Clicked="BtnLogin_Clicked" />
+
+            <Button x:Name="BtnSignUp" Text="SIGN UP" BackgroundColor="#8C5B07" CornerRadius="15" Clicked="BtnSignUp_Clicked" />
+
+            <Label x:Name="LblPasswordRecovery" Text="Password Recovery..." TextColor="#EBDFDF"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
